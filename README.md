@@ -21,6 +21,13 @@
     pip install -r requirements.txt
     ```
 
+4. Para gerar o modelo:
+    ```
+    Notebook: https://drive.google.com/file/d/1eovoqtWAhAOAToUkliA9l1ls06ZY0dcX/view
+    Vídeo 62: https://www.youtube.com/watch?v=apEK8RR1lcY
+    Vídeo 63: https://www.youtube.com/watch?v=cywENqLz760&t=873s
+    ```
+
 4. Baixar 'unsloth.Q8_0.gguf'
     ```
     https://huggingface.co/Larryareis/aitraining_Finetune_Llama3.2_v1/tree/main
