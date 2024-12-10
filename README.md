@@ -24,8 +24,10 @@
 4. Para gerar o modelo:
     ```
     Notebook: https://drive.google.com/file/d/1eovoqtWAhAOAToUkliA9l1ls06ZY0dcX/view
+    Meu notebook: https://drive.google.com/file/d/1eovoqtWAhAOAToUkliA9l1ls06ZY0dcX/view?usp=sharing 
     Vídeo 62: https://www.youtube.com/watch?v=apEK8RR1lcY
     Vídeo 63: https://www.youtube.com/watch?v=cywENqLz760&t=873s
+    Dataset: dataset.json
     ```
 
 4. Baixar 'unsloth.Q8_0.gguf'
