@@ -20,8 +20,8 @@ def chat():
             {'role': 'user', 'content': user_message}
         ],
         'temperature': 0.7
-    })
-    
+    })   
+     
     # Verifica se a resposta foi bem-sucedida
     if response.status_code == 200:
         ai_response = response.json().get('choices', [{}])[0].get('message', {}).get('content', 'Desculpe, não consegui obter uma resposta.')
