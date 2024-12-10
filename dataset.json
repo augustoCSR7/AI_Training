@@ -1,0 +1,137 @@
+[
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Qual exercício é indicado para trabalhar o quadríceps?",
+        "output": "Cadeira extensora, agachamento simples, afundo, agachamento com barra e leg press."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Como executar o stiff unilateral para posterior de coxa?",
+        "output": "Inicie com uma perna levemente flexionada no chão e a outra elevada para trás. Incline o tronco à frente segurando um peso e mantenha a coluna reta. Retorne controladamente."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Quais exercícios são ideais para fortalecer as panturrilhas?",
+        "output": "Gêmeos sentado, elevação de panturrilha bilateral e elevação na ponta de um degrau."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Quais exercícios são eficazes para o peitoral?",
+        "output": "Supino com barra, peck deck, supino sentado e crucifixo inclinado."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Como realizar a remada curvada com barra para dorsal?",
+        "output": "Flexione os joelhos e incline-se a 45 graus, mantenha a lombar arqueada e puxe a barra em direção ao abdômen, mantendo o tronco fixo."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Quais exercícios para tríceps eu posso incluir no treino?",
+        "output": "Mergulho no banco, extensão de halteres sob a cabeça, tríceps na polia alta e tríceps apoiado no banco."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Qual é a postura correta para realizar um agachamento livre?",
+        "output": "Mantenha os pés alinhados, coluna reta, joelhos apontando para fora e realize o movimento de sentar e levantar com controle."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Quais são os exercícios básicos para bíceps?",
+        "output": "Rosca direta, rosca martelo, rosca scott e rosca alternada."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Qual é o melhor exercício para fortalecimento de glúteos e posteriores da coxa?",
+        "output": "Elevação pélvica com joelhos flexionados ou estendidos."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Como fazer o supino com barra corretamente?",
+        "output": "Deite-se no banco com os pés no chão, mãos afastadas na barra, e empurre a barra de forma controlada sem arquear excessivamente a coluna."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Como ajustar o banco na cadeira extensora para trabalhar quadríceps?",
+        "output": "Regule o banco para que a parte de trás do joelho fique na dobra da cadeira, com os pés alinhados na almofada na mesma linha do tornozelo."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Qual é a diferença entre o leg press 45° e o leg press horizontal?",
+        "output": "A diferença está na angulação do quadril; ambos trabalham o quadríceps, mas o 45° pode ativar mais os glúteos em amplitudes maiores."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Como evitar lesões ao fazer agachamento com barra?",
+        "output": "Mantenha a barra no trapézio, os joelhos alinhados com os pés, coluna reta e o abdômen contraído para estabilizar o movimento."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Quais exercícios posso fazer para melhorar a força do peitoral?",
+        "output": "Supino com barra, crucifixo inclinado, peck deck e supino vertical."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Como executar a puxada aberta no pulley para dorsal?",
+        "output": "Sente-se na estação, segure a barra com as mãos afastadas, puxe em direção ao peito e controle o movimento na subida."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Como melhorar o equilíbrio ao fazer stiff unilateral?",
+        "output": "Foque em um ponto fixo à frente, mantenha o abdômen contraído e inicie com cargas leves até ganhar estabilidade."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Qual exercício para posterior da coxa é ideal para iniciantes?",
+        "output": "Elevação pélvica com joelhos flexionados, pois é seguro e ativa bem os isquiotibiais e glúteos."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Quais exercícios ajudam a desenvolver bíceps maiores?",
+        "output": "Rosca direta, rosca scott, rosca alternada e rosca martelo."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Como realizar o exercício de tríceps na polia alta com barra?",
+        "output": "Segure a barra reta na polia alta, mantenha o tronco ligeiramente inclinado e estenda os braços até as coxas, contraindo os tríceps."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Quais exercícios para panturrilha posso fazer sem equipamento?",
+        "output": "Elevação de panturrilha bilateral e elevação na ponta de um degrau."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Como ajustar a pegada para a remada cavalinho?",
+        "output": "Use um puxador em forma de triângulo para garantir maior estabilidade e conforto ao realizar o movimento."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Quais são os principais erros ao executar o supino reto?",
+        "output": "Não manter os pés no chão, barra mal posicionada nas mãos e deixar os cotovelos desalinhados com os ombros."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Qual é a postura correta para fazer a elevação pélvica com joelhos estendidos?",
+        "output": "Deite-se com os calcanhares apoiados em uma superfície elevada, eleve o quadril até alinhar o tronco e controle na descida."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Como executar o crucifixo inclinado corretamente?",
+        "output": "Deite-se em um banco inclinado, segure halteres com os braços ligeiramente flexionados, abra até a linha dos ombros e feche controladamente."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Quais exercícios são bons para fortalecer a lombar?",
+        "output": "Extensão de quadril em 45 graus, remada curvada e stiff."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "Como aumentar a intensidade no treino de tríceps?",
+        "output": "Use variações como tríceps mergulho no banco com peso e extensão de halteres com maior carga progressivamente."
+    },
+    {
+        "instruction": "Você é um assistente personal trainer que me ajuda com respostas sobre exercícios físicos",
+        "input": "O que devo observar ao fazer agachamento com barra para evitar dores no joelho?",
+        "output": "Alinhe os joelhos com os pés, não permita que eles passem a ponta dos pés e mantenha o peso distribuído nos calcanhares."
+    }
+]

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Training</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/gymS.png') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>  
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img/weightlifter.png') }}" alt="AI Training">
+                <span>AI Training</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#treinos">Treinos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Treine com Inteligência Artificial</h1>
+            <p>Seu personal trainer virtual disponível 24/7</p>
+            <button id="start-chat" class="btn-primary">Comece Agora!</button>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="chat-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="chat-box"></div>
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Escreva sua mensagem..." rows="1">
+                <button id="send-button" class="btn-send">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recursos Section -->
+    <section id="recursos" class="recursos">
+        <div class="section-container">
+            <h2>Recursos Principais</h2>
+            <div class="recursos-grid">
+                <div class="recurso-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>IA Personalizada</h3>
+                    <p>Treinos adaptados ao seu perfil e objetivos</p>
+                </div>
+                <div class="recurso-card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Biblioteca de Exercícios</h3>
+                    <p>Diversos exercícios com instruções detalhadas</p>
+                </div>
+                <div class="recurso-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Didádico</h3>
+                    <p>Entenda como fazer os exercícios</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treinos Section -->
+    <section id="treinos" class="treinos">
+        <div class="section-container">
+            <h2>Treinos Disponíveis</h2>
+            <div class="treinos-grid">
+                <div class="treino-card">
+                    <img src="{{ url_for('static', filename='img/homeIMG.jpg') }}" alt="Treino Superior">
+                    <h3>Membros Superiores</h3>
+                    <p>Foco em peitoral, costas e braços</p>
+                </div>
+                <div class="treino-card">
+                    <img src="{{ url_for('static', filename='img/inferiores.jpg') }}" alt="Treino Inferior">
+                    <h3>Membros Inferiores</h3>
+                    <p>Foco em pernas e glúteos</p>
+                </div>
+                <div class="treino-card">
+                    <img src="{{ url_for('static', filename='img/cardio.jpg') }}" alt="Cardio">
+                    <h3>Cardio</h3>
+                    <p>Melhore sua resistência</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="section-container">
+            <h2>Entre em Contato</h2>
+            <div class="contato-info">
+                <div class="contato-metodos">
+                    <div class="contato-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>contato@aitraining.com</p>
+                    </div>
+                    <div class="contato-item">
+                        <i class="fas fa-phone"></i>
+                        <p>(11) 99999-9999</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AI Training | Desenvolvido por Augusto - Larry - Sarah</p>
+    </footer>
+
+    <script>
+        const modal = document.getElementById('chat-modal');
+        const closeButton = document.querySelector('.close-button');
+
+        document.getElementById('start-chat').addEventListener('click', function() {
+            modal.style.display = 'block';
+        });
+
+        closeButton.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+
+        document.getElementById('send-button').addEventListener('click', async function() {
+            const userInput = document.getElementById('user-input').value;
+            const chatBox = document.getElementById('chat-box');
+            chatBox.innerHTML += `<p class="user-message"><strong>Você:</strong> ${userInput}</p>`;
+            document.getElementById('user-input').value = ''; // Limpa o campo de entrada
+
+            // Enviar a mensagem para o backend
+            try {
+                const response = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ message: userInput }),
+                });
+
+                const data = await response.json();
+                chatBox.innerHTML += `<p class="ai-message"><strong>IA:</strong> ${data.response}</p>`;
+            } catch (error) {
+                chatBox.innerHTML += `<p><strong>Erro:</strong> Não foi possível enviar a mensagem.</p>`;
+            }
+        });
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+    <style>
+        /* Estilos do Modal */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0.4); 
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 90%; 
+            max-width: 600px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .close-button {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close-button:hover,
+        .close-button:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #chat-box {
+            max-height: 300px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            word-wrap: break-word; /* Quebra de linha para textos longos */
+        }
+
+        .input-container {
+            display: flex;
+            justify-content: center; /* Centraliza a caixa de texto e o botão */
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        #user-input {
+            flex: 1; /* Faz a caixa de texto ocupar o espaço disponível */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none; /* Impede o redimensionamento manual */
+            min-height: 40px; /* Altura mínima */
+            max-height: 100px; /* Altura máxima */
+            overflow-y: auto; /* Permite rolagem se o texto for muito longo */
+        }
+
+        .btn-send {
+            margin-left: 10px;
+            padding: 10px 15px;
+            background-color: #007bff; /* Cor do botão */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-send:hover {
+            background-color: #0056b3; /* Cor do botão ao passar o mouse */
+        }
+
+        .user-message {
+            text-align: right;
+            color: blue; /* Cor para a mensagem do usuário */
+        }
+
+        .ai-message {
+            text-align: left;
+            color: green; /* Cor para a mensagem da IA */
+        }
+    </style>
+</body>
+</html>
