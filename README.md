@@ -54,6 +54,6 @@ python app.py ou flask run
 Para visualizar o projeto, abra o navegador e acesse:
 
 ```
-https://localhost:5000
+http://localhost:5000
 ```
 
